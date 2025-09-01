@@ -5,18 +5,18 @@
   description: cm-job-description-squad-leader
   playTimeTracker: CMJobSquadLeader
   requirements:
-  - !type:RoleTimeRequirement
-    role: CMJobHospitalCorpsman
-    time: 3600 # 1 hour
-  - !type:RoleTimeRequirement
-    role: CMJobCombatTech
-    time: 3600 # 1 hour
+  #- !type:RoleTimeRequirement - RNMC-14 - Too much for lowpop. If implemented, these extra playtimes should ideally be placed in Fireteam Leader role.
+  #  role: CMJobHospitalCorpsman
+  #  time: 3600 # 1 hour
+  #- !type:RoleTimeRequirement
+  #  role: CMJobCombatTech
+  #  time: 3600 # 1 hour
   - !type:RoleTimeRequirement
     role: CMJobFireteamLeader
-    time: 18000 # 5 hours
-  - !type:DepartmentTimeRequirement
-    department: CMSquad
-    time: 36000 # 10 hours
+    time: 7200 # 2 hours - RNMC-14 - Enough for lowpop. 5 hours is too much at this moment.
+  #- !type:DepartmentTimeRequirement
+  #  department: CMSquad
+  #  time: 36000 # 10 hours
   ranks:
     RMCRankGunnerySergeant:
     - !type:RoleTimeRequirement
