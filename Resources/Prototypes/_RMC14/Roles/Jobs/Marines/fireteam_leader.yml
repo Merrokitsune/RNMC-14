@@ -5,6 +5,9 @@
   description: cm-job-description-fireteam-leader
   playTimeTracker: CMJobFireteamLeader
   requirements:
+  - !type:TotalJobsTimeRequirement
+    group: CMJobsMedical
+    time: 7200 # 2 hours - RNMC-14 - Fireteam leaders need to know about medical experience first.
   - !type:DepartmentTimeRequirement
     department: CMSquad
     time: 14400 # 4 hours - RNMC-14 - Enough for lowpop. 10 hours is too much at this moment.
